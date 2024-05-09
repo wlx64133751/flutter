@@ -577,7 +577,7 @@ class FrameworkRepository extends Repository {
   }
 
   final Checkouts checkouts;
-  static const String defaultUpstream = 'git@github.com:flutter/flutter.git';
+  static const String defaultUpstream = 'git@github.com:wlx64133751/flutter.git';
   static const String defaultBranch = 'master';
 
   Future<CiYaml> get ciYaml async {
@@ -864,7 +864,7 @@ class EngineRepository extends Repository {
     return ciYaml;
   }
 
-  static const String defaultUpstream = 'git@github.com:flutter/engine.git';
+  static const String defaultUpstream = 'git@github.com:wlx64133751/engine.git';
   static const String defaultBranch = 'main';
 
   /// Update the `dart_revision` entry in the DEPS file.

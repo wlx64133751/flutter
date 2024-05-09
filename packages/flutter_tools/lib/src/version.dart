@@ -458,8 +458,8 @@ class VersionUpstreamValidator {
 
   // The predefined list of remotes that are considered to be standard.
   static final List<String> _standardRemotes = <String>[
-    'https://github.com/flutter/flutter.git',
-    'git@github.com:flutter/flutter.git',
+    'https://github.com/wlx64133751/flutter.git',
+    'git@github.com:wlx64133751/flutter.git',
   ];
 
   // Strips ".git" suffix from a given string, preferably an url.
@@ -713,7 +713,7 @@ class GitTagVersion {
       if (channel == 'dev' || channel == 'beta' || channel == 'stable') {
         globals.printTrace('Skipping request to fetchTags - on well known channel $channel.');
       } else {
-        final String flutterGit = platform.environment['FLUTTER_GIT_URL'] ?? 'https://github.com/flutter/flutter.git';
+        final String flutterGit = platform.environment['FLUTTER_GIT_URL'] ?? 'https://github.com/wlx64133751/flutter.git';
         _runGit('git fetch $flutterGit --tags -f', processUtils, workingDirectory);
       }
     }
